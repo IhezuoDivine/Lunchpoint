@@ -1,0 +1,31 @@
+* {
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: none;
+  padding: none;
+}
+:root {
+  --bg-color: hsl(0, 0%, 91%);
+  --second-bg-color: white;
+  --main-color: hsl(159, 19%, 26%);
+  --text-color: black;
+}
+body {
+  background-color: var(--second-bg-color);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+  background-color: var(--bg-color);
+  align-items: center;
+  text-align: center;
+  padding: 5px 10px;
+  width: 100%;
+}
+.homepage {
+  padding-top: 150px;
+}
