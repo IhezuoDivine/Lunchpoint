@@ -47,6 +47,20 @@ header h1 {
   border-radius: 10px;
   background-color: var(--main-color);
 }
+@media (min-width: 700px) {
+  header {
+    padding: 20px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  .headernav a {
+    margin-right: 25px;
+  }
+  .headerlogin {
+    margin-right: 15px;
+  }
+}
 .homepage {
   padding-top: 100px;
   padding-bottom: 15px;
