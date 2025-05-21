@@ -3,8 +3,8 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  margin: none;
-  padding: none;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --bg-color: hsl(0, 0%, 91%);
@@ -23,9 +23,73 @@ header {
   background-color: var(--bg-color);
   align-items: center;
   text-align: center;
-  padding: 5px 10px;
+  padding: 20px 10px;
   width: 100%;
 }
+header h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.headernav a {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+.headerlogin {
+  padding: 5px 10px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+}
+.startnow {
+  padding: 5px 10px;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--main-color);
+}
 .homepage {
-  padding-top: 150px;
+  padding-top: 100px;
+  padding-bottom: 15px;
+  background-color: var(--bg-color);
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.homepage a {
+  padding: 5px 15px;
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+}
+.homepage h1 {
+  margin-top: 10px;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+.homepage p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.homepage .startfree {
+  padding: 10px 25px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  color: white;
+  margin-right: 10px;
+}
+.homepage .demo {
+  padding: 10px 25px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  margin-right: 10px;
+}
+.homepage div ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 5px;
 }
