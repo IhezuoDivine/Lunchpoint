@@ -107,3 +107,38 @@ header h1 {
   margin-top: 25px;
   padding: 5px;
 }
+.efficientsection {
+  padding: 25px 10px 35px 10px;
+  align-items: center;
+  color: var(--second-bg-color);
+  background-color: var(--main-color);
+}
+.efficientsection h1,
+.efficientsection-p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.efficientcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.efficientcontainer div {
+  padding: 20px 15px;
+  border-radius: 10px;
+  background-color: hsl(159, 19%, 36%);
+}
+.efficientcontainer aside {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.efficientcontainer h3 {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
