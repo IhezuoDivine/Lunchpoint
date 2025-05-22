@@ -35,17 +35,26 @@ header h1 {
   color: black;
   font-weight: bold;
 }
+.headernav a:hover {
+  color: hsl(0, 0%, 40%);
+}
 .headerlogin {
   padding: 5px 10px;
   color: black;
   background-color: white;
   border-radius: 10px;
 }
+.headerlogin:hover {
+  background-color: hsl(0, 0%, 91%);
+}
 .startnow {
   padding: 5px 10px;
   color: white;
   border-radius: 10px;
   background-color: var(--main-color);
+}
+.startnow:hover {
+  background-color: hsl(159, 19%, 36%);
 }
 @media (min-width: 700px) {
   header {
@@ -91,12 +100,18 @@ header h1 {
   color: white;
   margin-right: 10px;
 }
+.homepage .startfree:hover {
+  background-color: hsl(159, 19%, 36%);
+}
 .homepage .demo {
   padding: 10px 25px;
   background-color: white;
   border-radius: 10px;
   color: black;
   margin-right: 10px;
+}
+.homepage .demo:hover {
+  background-color: hsl(0, 0%, 91%);
 }
 .homepage div ul {
   display: flex;
@@ -141,4 +156,237 @@ header h1 {
   text-align: center;
   margin-bottom: 10px;
   font-size: 20px;
+}
+.advance {
+  padding: 25px 10px;
+  color: black;
+  margin-bottom: 30px;
+  background-color: var(--second-bg-color);
+}
+.advanceh1 {
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
+.advancep {
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 25px;
+}
+.advancecontainer {
+  display: block;
+  padding-top: 30px;
+  padding-left: 15px;
+  margin: 0px 30px;
+  border-radius: 5px;
+  background-color: var(--bg-color);
+}
+@media (min-width: 700px) {
+  .advancecontainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 15px;
+    margin: 0px 30px;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+  }
+}
+.advanceexplore {
+  padding-bottom: 30px;
+}
+.advanceexplore h1 {
+  font-size: 28px;
+  padding-bottom: 15px;
+}
+.advanceexplore p {
+  padding-bottom: 50px;
+  font-size: 16px;
+}
+.advanceexplore a {
+  padding: 10px 25px;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--main-color);
+}
+.chart-wrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 250px;
+}
+.y-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-right: 10px;
+  font-size: 12px;
+  color: #666;
+}
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  height: 100%;
+}
+.bar-value90 {
+  width: 30px;
+  height: var(--value);
+  border-radius: 6px 6px 0 0;
+  transition: height 0.3s;
+  background-color: green;
+}
+.bar {
+  width: 30px;
+  background-color: hsl(210, 70%, 60%);
+  height: var(--value);
+  border-radius: 6px 6px 0 0;
+  transition: height 0.3s;
+}
+@media (min-width: 1000px) {
+  .bar-chart {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bar,
+  .bar-value90 {
+    width: 50px;
+    gap: 25px;
+  }
+}
+.advanceexplore a:hover {
+  background-color: hsl(159, 19%, 36%);
+}
+.advancecontainer2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: center;
+  gap: 10%;
+  padding: 15px;
+  margin-top: 25px;
+  background-color: white;
+}
+.smartnoti {
+  color: black;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 97%);
+}
+.taskmanage {
+  padding-bottom: 20px;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 97%);
+}
+.smartnoti h4,
+.taskmanage h4 {
+  font-size: 2rem;
+}
+.smartnotidiv,
+.taskmanagediv {
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 35px 15px;
+  border-radius: 5px;
+  background-color: var(--bg-color);
+}
+.emailnotisave,
+.taskmanage aside {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 15px;
+}
+.taskmanage aside h5 {
+  font-size: 20px;
+}
+.henry {
+  padding: 35px 10px;
+  background-color: hsl(0, 0%, 94%);
+}
+.jane {
+  padding: 35px 10px;
+  margin-bottom: 20px;
+}
+.jane p {
+  text-align: center;
+  align-items: center;
+}
+.henry h4,
+.jane h4 {
+  margin-bottom: 25px;
+}
+.emailnotisave h2,
+.smartnoti aside h2 {
+  font-size: 20px;
+}
+.emailnotisave button {
+  font-size: 17px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 90%);
+}
+.emailnotisave button:hover {
+  background-color: hsl(0, 0%, 97%);
+}
+.smartnoti aside {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 15px;
+  border-top: 1px solid hsl(0, 0%, 80%);
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch .slider:hover {
+  color: hsl(0, 0%, 97%);
+  border-radius: 50px;
+  background-color: hsl(0, 0%, 80%);
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(0, 0%, 70%);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: hsl(200, 70%, 50%);
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
 }
