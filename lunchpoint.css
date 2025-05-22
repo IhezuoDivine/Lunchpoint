@@ -108,34 +108,35 @@ header h1 {
   font-size: 18px;
   margin-bottom: 25px;
 }
-.homepage .startfree {
+.startfree {
   padding: 10px 25px;
   background-color: var(--main-color);
   border-radius: 10px;
   color: white;
   margin-right: 10px;
 }
-.homepage .startfree:hover {
+.startfree:hover {
   background-color: hsl(159, 19%, 36%);
 }
-.homepage .demo {
+.demo {
   padding: 10px 25px;
   background-color: white;
   border-radius: 10px;
   color: black;
   margin-right: 10px;
 }
-.homepage .demo:hover {
+.demo:hover {
   background-color: hsl(0, 0%, 91%);
 }
 .homepage div ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
   align-items: center;
   font-weight: bold;
   margin-top: 25px;
-  padding: 5px;
+  padding: 10px 20px;
 }
 .efficientsection {
   padding: 25px 10px 35px 10px;
@@ -503,4 +504,92 @@ input:checked + .slider::before {
 }
 .advanceprof button:hover {
   background-color: hsl(159, 19%, 56%);
+}
+.strategyatlunchpoint {
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 20px 10px;
+  background-color: white;
+}
+.strategyatlunchpointdiv h1 {
+  margin-bottom: 20px;
+}
+.strategyatlunchpointdiv h4 {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: green;
+}
+.activeusers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 25px 10px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+}
+.activeusers span {
+  display: block;
+  font-size: 16px;
+}
+.discoverfullscale {
+  display: block;
+}
+@media (min-width: 700px) {
+  .discoverfullscale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 25px 10px;
+  }
+}
+.discoverfullscale div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 10px 5px 10px;
+}
+
+table {
+ border-spacing: 5px;
+  border-collapse: 10px;
+  width: 100%;
+ overflow: hidden;
+}
+th, td{
+  padding: 5px;
+  text-align: left;
+  font-size: 14px;
+}
+@media(min-width:800px) {
+  th, td{
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+.footersocial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+.footersocial div a {
+  margin-right: 10px;
+  font-size: 20px;
 }
