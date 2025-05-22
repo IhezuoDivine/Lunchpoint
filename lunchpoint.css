@@ -25,13 +25,14 @@ header {
   text-align: center;
   padding: 20px 10px;
   width: 100%;
+  z-index: 100;
 }
 header h1 {
-  font-size: 20px;
+  font-size: 30pxpx;
   font-weight: bold;
 }
 .headernav a {
-  font-size: 16px;
+  font-size: 20px;
   color: black;
   font-weight: bold;
 }
@@ -56,8 +57,17 @@ header h1 {
 .startnow:hover {
   background-color: hsl(159, 19%, 36%);
 }
-@media (min-width: 700px) {
+@media (min-width: 400px) {
   header {
+    display: inline;
+  }
+  .headernav {
+    padding: 15px 0px;
+  }
+}
+@media (min-width: 800px) {
+  header {
+    display: flex;
     padding: 20px;
   }
   header h1 {
@@ -77,6 +87,11 @@ header h1 {
   align-items: center;
   text-align: center;
   color: black;
+}
+@media (min-width: 400px) {
+  .homepage {
+    padding-top: 190px;
+  }
 }
 .homepage a {
   padding: 5px 15px;
@@ -158,9 +173,10 @@ header h1 {
   font-size: 20px;
 }
 .advance {
-  padding: 25px 10px;
+  padding: 25px 15px;
   color: black;
   margin-bottom: 30px;
+  overflow: hidden;
   background-color: var(--second-bg-color);
 }
 .advanceh1 {
@@ -176,25 +192,32 @@ header h1 {
 }
 .advancecontainer {
   display: block;
-  padding-top: 30px;
-  padding-left: 15px;
-  margin: 0px 30px;
-  border-radius: 5px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px 0px 0px 25px;
   background-color: var(--bg-color);
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .advancecontainer {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-left: 15px;
-    margin: 0px 30px;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0px 0px 25px;
     border-radius: 5px;
     background-color: var(--bg-color);
   }
+  .advanceexplore {
+    flex: 1;
+  }
+  .chart-wrapper {
+    flex: 1;
+    width: 100%;
+  }
 }
 .advanceexplore {
-  padding-bottom: 30px;
+  padding: 15px 30px;
 }
 .advanceexplore h1 {
   font-size: 28px;
@@ -213,10 +236,14 @@ header h1 {
 .chart-wrapper {
   display: flex;
   align-items: flex-end;
+  margin-top: 25px;
+  width: 100%;
+  overflow: hidden;
   gap: 10px;
   padding: 20px;
   background: white;
-  border-radius: 10px;
+  border-end-end-radius: 10px;
+  border-top-left-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: 250px;
 }
