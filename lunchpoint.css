@@ -270,7 +270,13 @@ header h1 {
   gap: 10%;
   padding: 15px;
   margin-top: 25px;
+  margin-bottom: 150px;
   background-color: white;
+}
+@media (min-width: 960px) {
+  .advancecontainer2 {
+    margin-bottom: 30px;
+  }
 }
 .smartnoti {
   color: black;
@@ -279,7 +285,7 @@ header h1 {
   background-color: hsl(0, 0%, 97%);
 }
 .taskmanage {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   color: black;
   border-radius: 5px;
   border: 1px solid hsl(0, 0%, 90%);
@@ -339,7 +345,7 @@ header h1 {
 .smartnoti aside {
   display: flex;
   justify-content: space-between;
-  padding: 25px 15px;
+  padding: 25px 15px 10px 10px;
   border-top: 1px solid hsl(0, 0%, 80%);
 }
 .switch {
@@ -389,4 +395,85 @@ input:checked + .slider {
 
 input:checked + .slider::before {
   transform: translateX(26px);
+}
+
+.articleadvancecontainers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: center;
+  gap: 10%;
+  padding: 15px;
+  margin-top: 25px;
+  margin-bottom: 150px;
+  background-color: white;
+}
+.articleadvancecontainers div {
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 97%);
+}
+.articleadvancecontainers h1 {
+  padding: 10px;
+  font-size: 28px;
+}
+.articleadvancecontainers p {
+  padding-bottom: 10px;
+}
+.articleadvancecontainers span {
+  font-size: 16px;
+}
+.articleadvancecontainers button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid hsl(0, 0%, 70%);
+  padding: 10px 150px;
+  border-radius: 50px;
+  margin-top: 15px;
+  background-color: white;
+}
+.articleadvancecontainers .feature {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.feature::before,
+.feature::after {
+  height: 1px;
+  margin: 0 10px;
+  content: "";
+  flex-grow: 1;
+  width: 100%;
+  background-color: hsl(0, 0%, 10%);
+}
+.articleadvancecontainers aside i {
+  padding-right: 10px;
+}
+.articleadvancecontainers aside p {
+  font-weight: bolder;
+  font-size: 16px;
+}
+.advanceprof {
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+}
+.advanceprof h1 {
+  font-size: 28px;
+  padding-bottom: 15px;
+}
+.advanceprof button {
+  padding: 10px 25px;
+  border-radius: 50px;
+  margin-top: 25px;
+  background-color: hsl(159, 19%, 46%);
+}
+.advanceprof button:hover {
+  background-color: hsl(159, 19%, 56%);
 }
