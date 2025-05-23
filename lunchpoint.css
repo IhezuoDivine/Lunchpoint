@@ -25,6 +25,7 @@ header {
   text-align: center;
   padding: 20px 10px;
   width: 100%;
+  cursor: pointer;
   z-index: 100;
 }
 header h1 {
@@ -93,10 +94,8 @@ header h1 {
     padding-top: 190px;
   }
 }
-.homepage a {
-  padding: 5px 15px;
-  background-color: white;
-  border-radius: 50px;
+.homepage h5 {
+  font-size: 16px;
   color: black;
 }
 .homepage h1 {
@@ -148,6 +147,7 @@ header h1 {
 .efficientsection-p {
   text-align: center;
   margin-bottom: 15px;
+  color: white;
 }
 .efficientcontainer {
   display: grid;
@@ -382,16 +382,10 @@ header h1 {
   width: 60px;
   height: 34px;
 }
-
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
-}
-.switch .slider:hover {
-  color: hsl(0, 0%, 97%);
-  border-radius: 50px;
-  background-color: hsl(0, 0%, 80%);
 }
 .slider {
   position: absolute;
@@ -462,6 +456,10 @@ input:checked + .slider::before {
   margin-top: 15px;
   background-color: white;
 }
+.articleadvancecontainers button:hover {
+  color: white;
+  background-color: hsl(159, 19%, 36%);
+}
 .articleadvancecontainers .feature {
   display: flex;
   margin-top: 10px;
@@ -500,7 +498,8 @@ input:checked + .slider::before {
   padding: 10px 25px;
   border-radius: 50px;
   margin-top: 25px;
-  background-color: hsl(159, 19%, 46%);
+  color: white;
+  background-color: hsl(159, 23%, 32%);
 }
 .advanceprof button:hover {
   background-color: hsl(159, 19%, 56%);
@@ -559,6 +558,72 @@ input:checked + .slider::before {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.loginsection {
+  display: none;
+  background-color: hsl(0, 0%, 91%);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+.loginhidden,
+.startnowhidden {
+  max-width: 600px;
+  margin: 0% auto;
+  padding-top: 200px;
+}
+.loginhidden small a,
+.startnowhidden small a {
+  font-size: 15px;
+  color: hsl(159, 19%, 26%);
+}
+
+.btn {
+  background-color: hsl(159, 19%, 26%);
+  color: white;
+  padding: 10px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(159, 19%, 36%);
+}
+.back-btn {
+  background-color: white;
+  color: black;
+}
+
+.back-btn:hover {
+  background-color: hsl(0, 0%, 80%);
+}
+
+input {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid hsl(159, 19%, 26%);
+}
+
+h1,
+h2 {
+  color: black;
+}
+
+small {
+  color: black;
+}
+#errormessage,
+#errormessage1 {
+  color: black;
+  padding-top: 20px;
+}
 .footer {
   display: block;
   justify-content: center;
@@ -567,18 +632,20 @@ input:checked + .slider::before {
 }
 
 table {
- border-spacing: 5px;
+  border-spacing: 5px;
   border-collapse: 10px;
   width: 100%;
- overflow: hidden;
+  overflow: hidden;
 }
-th, td{
+th,
+td {
   padding: 5px;
   text-align: left;
   font-size: 14px;
 }
-@media(min-width:800px) {
-  th, td{
+@media (min-width: 800px) {
+  th,
+  td {
     font-size: 20px;
     padding: 15px;
   }
@@ -589,7 +656,11 @@ th, td{
   align-items: center;
   padding: 5px 20px;
 }
-.footersocial div a {
+.footersocial div a i {
   margin-right: 10px;
   font-size: 20px;
+  color: black;
+}
+.footersocial div a i:hover {
+  color: hsl(0, 0%, 40%);
 }
